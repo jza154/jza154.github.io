@@ -1,0 +1,48 @@
+
+
+/*citing work
+https://tutorialzine.com/2013/10/12-awesome-css3-features-you-can-finally-use
+*/
+body {background-color:  #00e5e5;}
+         /*css for top nav*/
+#navcontainer ul{
+    padding: 2% 30%;
+    margin: 0;
+    list-style-type: none;
+    background-color: #7796eb;
+    color: #FFF;
+    width: 70%;
+    font: bold 100% arial, helvetica, sans-serif;
+         /*text-align: center;*/
+    }
+    li { display: inline; }
+    li a
+    {
+    text-decoration: none;
+    background-color: #7796eb;
+    color: #FFF;
+    padding: 0% 0%; 
+    }
+    li a:hover
+    {
+    background-color:yellow;
+    color: #fff;
+    }
+
+
+footer{
+    height: 5%; 
+    width:70%;
+    position: absolute;
+    left: 50%;
+    bottom: 0; 
+}
+
+table {
+   margin-top: 0%;
+   margin-left: 25%;
+   width: 50%;
+   position: absolute;
+   border: 1px solid black
+/*"width:100%" frame="box"*/
+}

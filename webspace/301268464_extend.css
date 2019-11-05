@@ -1,0 +1,119 @@
+
+
+/*citing work
+https://tutorialzine.com/2013/10/12-awesome-css3-features-you-can-finally-use
+*/
+body {background-color:  #00e5e5;}
+         /*css for top nav*/
+#navcontainer ul{
+    padding: 4% 35%;
+    margin: 0;
+    list-style-type: none;
+    background-color: #7796eb;
+    color: #FFF;
+    width: 90%;
+    font: bold 100% arial, helvetica, sans-serif;
+         /*text-align: center;*/
+    }
+    li { display: inline; }
+    li a
+    {
+    text-decoration: none;
+    background-color: #7796eb;
+    color: #FFF;
+    padding: 0% 0%; 
+    }
+    li a:hover
+    {
+    background-color:yellow;
+    color: #fff;
+    }
+
+
+footer{
+    height: 5%; 
+    width:70%;
+    position: absolute;
+    left: 50%;
+    bottom: 0; 
+}
+
+table {
+   margin-top: 0%;
+   margin-left: 30%;
+   width: 50%;
+   position: absolute;
+   border: 1px solid black
+/*"width:100%" frame="box"*/
+}
+
+.container{
+
+    /* Set a counter named cnt to 0 */
+    counter-reset: cnt;
+    position:relative;
+    text-align:center;
+    padding:20px 0;
+    width:420px;
+    height: 160px;
+    margin: 0 auto;
+}
+
+/* You can style pseudo elements and give them content,
+   as if they were real elements on the page */
+
+.container::before{
+    display: block;
+    content:'Hover to Check out the latest releases:';
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+    padding:15px;
+}
+
+.container span{
+    display:inline-block;
+    padding:10px 10px;
+    background-color:#78CCD2;
+    color:#186C72;
+    border-radius:4px;
+    margin:3%;
+    cursor:default;
+}
+
+/* Create a counter with a pseudo element */
+
+.container span::after{
+
+    /* Every time this rule is executed, the 
+       counter value is increased by 1 */
+    counter-increment: cnt;
+
+    /* Add the counter value as part of the content */
+    content:" #" counter(cnt);
+
+    display:inline-block;
+    padding:4px;
+}
+
+/* Pseudo elements can even access attributes of their parent element */
+
+.container span::before{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    content:attr(data-title);
+    color:#666;
+
+    opacity:0;
+
+    /* Animate the transitions */
+    -webkit-transition:opacity 0.4s;
+    transition:opacity 0.4s;
+}
+
+.container span:hover::before{
+    opacity:1;
+}
+

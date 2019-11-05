@@ -1,0 +1,81 @@
+   /*css for top nav*/
+
+body {
+   background-color: #00e5e5;
+}
+
+#navcontainer ul {
+   padding: 5% 0;
+   margin: 0;
+   list-style-type: none;
+   background-color: #7796eb;
+   color: #FFF;
+   width: 90%;
+   font: bold 100% arial, helvetica, sans-serif;
+   /*text-align: center;*/
+}
+
+li {
+   display: inline;
+}
+
+li a {
+   text-decoration: none;
+   background-color: #7796eb;
+   color: #FFF;
+   padding: 5% 10%;
+}
+
+li a:hover {
+   background-color: yellow;
+   color: #fff;
+}
+
+
+#vertical-menu {
+   width: 10%;
+}
+
+#topright {
+   position: absolute;
+   top: 1%;
+   right: 20%;
+   font-size: 18px;
+}
+
+p {
+   position: absolute;
+   display: block;
+   margin-top: 5%;
+   margin-bottom: 0;
+   margin-left: 10%;
+   margin-right: 10%;
+}
+
+hr {
+   position: absolute;
+   display: block;
+   margin-top: 0;
+   margin-bottom: 0;
+   margin-left: 15%;
+   margin-right: 10%;
+   width: 77%;
+   height: 100%;
+}
+
+footer {
+   height: 20%;
+   width: 100%;
+   position: absolute;
+   left: 30%;
+   bottom: 0;
+}
+
+table {
+   margin-top: 10%;
+   margin-left: 20%;
+   width: 50%;
+   position: absolute;
+   border: 1px solid black;
+}
+
